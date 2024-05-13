@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:backgroundTint="#FFF8F8"
     tools:context=".MainActivity">
 
     <TextView
@@ -11,23 +12,22 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
+        android:layout_marginStart="18dp"
         android:layout_marginTop="16dp"
         android:text="Notes"
-        android:layout_marginStart="18dp"
         android:textColor="@color/purple"
-        android:textSize="24sp"/>
+        android:textSize="24sp" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/notesRecycleView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginTop="50dp"
-        android:padding="16dp"/>
-
+        android:background="#EDEAC8"
+        android:padding="16dp" />
 
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-
         android:id="@+id/addButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -39,7 +39,8 @@
         android:layout_marginBottom="16dp"
         android:backgroundTint="@color/purple"
         android:src="@drawable/baseline_add_24"
-        app:tint="@color/white" />
+        app:tint="@color/white"
+        android:contentDescription="Add Item" />
 
 
 </RelativeLayout>
